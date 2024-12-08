@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: url('images/image\ 1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 10s infinite ease-in-out;
+}
+
+#clock {
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0%, 50%, 0.1);
+    width: 100%;
+}
+
+
+@keyframes change {
+    0% {
+        background-image: url('images/image\ 1.jpg');
+    }
+
+    20% {
+        background-image: url('images/image\ 2.jpg');
+    }
+
+    40% {
+        background-image: url('images/image\ 3.jpg');
+    }
+
+    60% {
+        background-image: url('images/image\ 4.jpg');
+    }
+
+    80% {
+        background-image: url('images/image\ 5.jpg');
+    }
+
+    100% {
+        background-image: url('images/image\ 6.jpg');
+    }
+}
